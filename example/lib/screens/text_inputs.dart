@@ -53,7 +53,9 @@ class _TextInputsState extends State<TextInputs> {
                 onPress: () {
                   CommonDatePicker.showDatePicker(
                     context,
-                    theme: const DatePickerTheme(formateType: FormateType.ymd),
+                    theme: const CommonDatePickerTheme(
+                      formateType: FormateType.ymd,
+                    ),
                     minTime: DateTime(2018, 3, 5),
                     maxTime: DateTime(2019, 6, 7),
                     onChanged: (DateTime date) {
